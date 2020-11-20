@@ -7,7 +7,8 @@
 ![演示3](https://github.com/pangolierse/LinearColor/blob/master/3.png)
 
 具体还是要自己实践才能发现更多的用法,看不到图片的话可以直接去体验
-演示地址：（ http://www.pangolier.cn/project/linearColor  ）
+
+演示地址：（http://www.pangolier.cn/project/linearColor ）
 
 
 喜欢的话不妨动动你的手指给个star，当然你也可以跟我推荐一些新功能，我很愿意在原有基础上进行扩展
