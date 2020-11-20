@@ -2,12 +2,17 @@
 ## 介绍
 你可以用这个来设计你需要的渐变色，它可以提供至多5个渐变项目，你可以自定义它的角度，大小，颜色
 
-![演示1](https://github.com/pangolierse/LinearColor/edit/master/1.png)
-![演示2](https://github.com/pangolierse/LinearColor/edit/master/2.png)
-![演示3](https://github.com/pangolierse/LinearColor/edit/master/3.png)
+![演示1](https://github.com/pangolierse/linearColor/blob/master/1.png)
+![演示2](https://github.com/pangolierse/LinearColor/blob/master/2.png)
+![演示3](https://github.com/pangolierse/LinearColor/blob/master/3.png)
 
 具体还是要自己实践才能发现更多的用法,看不到图片的话可以直接去体验
-演示地址：（http://www.pangolier.cn/project/linearColor/）
+
+演示地址：（http://www.pangolier.cn/project/linearColor ）
+
+
+喜欢的话不妨动动你的手指给个star，当然你也可以跟我推荐一些新功能，我很愿意在原有基础上进行扩展
+
 ## Project setup
 ```
 npm install
