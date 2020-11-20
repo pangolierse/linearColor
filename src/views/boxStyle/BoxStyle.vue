@@ -11,6 +11,7 @@
     <box-style-item :afterMoved="boxSize" :init="70">Size：</box-style-item>
     <box-style-item :afterMoved="boxRadius">Radius：</box-style-item>
     <box-style-item :afterMoved="shadowDis" :init="20">Distance：</box-style-item>
+    <box-style-item :afterMoved="hueRotate" :init="0">HueRotate：</box-style-item>
     <pre ref="pre">
         <div class="mask" ref="mask"> COPY SUCCESS</div>
         <div class="copy" @click="copy">COPY</div>
@@ -18,6 +19,7 @@
         <span class="property">height: </span> <span class="value">{{height}}px;</span><br>
         <span class="property">border-radius: </span> <span class="value">{{borderRadius}}px;</span><br>
         <span class="property">background-color: </span> <span class="value" >{{backgroundColor}};</span><br>
+        <span class="property">filter: </span> <span class="value">{{filter}};</span><br>
         <span class="property">box-shadow: </span> <span class="value">{{boxShadow}};</span><br>
         <span class="property">background-size: </span> <span class="value">{{backgroundSize}};</span><br>
         <span class="property">background-image: </span> <span class="value">{{backgroundImage}};</span>
@@ -38,6 +40,7 @@
     BOX_RADIUS,
     BOX_SIZE,
     BOX_DISTANCE,
+    BOX_HUEROTATE,
 
     CHANGE_PROPERTY,
   } from '@common/BusEventName'
@@ -53,10 +56,11 @@
         height:'',
         borderRadius:'',
         backgroundColor:'',
+        filter:'',
         backgroundSize:'',
         boxShadow:'',
         backgroundImage:'',
-        cssProperty:['borderRadius','backgroundColor','backgroundSize','boxShadow','backgroundImage'],
+        cssProperty:['borderRadius','backgroundColor','backgroundSize','boxShadow','backgroundImage','filter'],
       }
     },
     mounted(){
@@ -93,6 +97,10 @@
         this.$bus.$emit(BOX_OPTION_PUITY,color)
         // on ColorDesigner
         this.$bus.$emit(COLOR_DESIGNER,color)
+      },
+      hueRotate(percent){
+        // on ShowBox
+        this.$bus.$emit(BOX_HUEROTATE,percent)
       },
       copy(){
         let textarea = this.$refs.copy_text

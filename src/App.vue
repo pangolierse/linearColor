@@ -1,9 +1,12 @@
+
 <template>
   <div id="app"  ref="colorDesigner">
     <div class="title">
       <h1>DIY BoxColor
       <br>
       <span>Generate CSS code</span>
+      <br>
+      <a href="https://github.com/pangolierse/LinearColor">Github To star Me</a>
       </h1>
     </div>
     <div class="container">
@@ -65,6 +68,10 @@ html,body{
       span{
         font-size: 20px;
       }
+    }
+    a{
+      text-decoration: none;
+      color: white;
     }
     margin-bottom: 50px;
     text-align: center;

@@ -38,7 +38,7 @@
         else if(left > this.offsetWidth)
           left = this.offsetWidth
         btn.style.width = left + 'px'
-        let percent = Math.round(left/this.offsetWidth*100)/100
+        let percent = left/this.offsetWidth
         afterMoved && afterMoved(percent)
         Event.$emit('moved')
       },1000/60))

@@ -23,7 +23,6 @@
   import LinearItem from './childComps/LinearItem'
   import LinearOption from './childComps/LinearOption'
   import LinearSize from './childComps/LinearSize'
-  import Vue from 'vue'
   import {
     INIT_BOX_LINEAR,
     SHOW_BOX_LINEAR_COLOR,
@@ -78,7 +77,11 @@
         }
       },
       create(){
-        this.itemKey.push(this.nowItemIndex++)
+        if(this.colors.length == 5){
+          alert('最多只能有五个颜色')
+        }else{
+          this.itemKey.push(this.nowItemIndex++)
+        }
       },
       getInit(value){
         if(value * 20 > 100){

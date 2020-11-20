@@ -19,6 +19,7 @@
     BOX_RADIUS,
     BOX_SIZE,
     BOX_DISTANCE,
+    BOX_HUEROTATE,
 
     CHANGE_PROPERTY,
   } from '@common/BusEventName'
@@ -51,13 +52,18 @@
       }))
       // BoxStyle emit
       this.$bus.$on(BOX_RADIUS, this._beforeDo((percent) => {
-        showBox.style.borderRadius = percent*100/2 + '%'
+        showBox.style.borderRadius = (percent*100/2).toFixed(0) + '%'
       }))
       // BoxStyle emit
       this.$bus.$on(BOX_DISTANCE,this._beforeDo((percent) => {
         let dis = percent * (this.maxDis - this.minDis) + this.minDis
         this.nowDis = dis
         showBox.style.boxShadow = createBoxShadow(this.prevColor.h,this.prevColor.sv,this.prevColor.v,dis)
+      }))
+      // BoxStyle emit
+      this.$bus.$on(BOX_HUEROTATE, this._beforeDo((percent) => {
+        let hue = (percent*360).toFixed(0)
+        showBox.style.filter = `hue-rotate(${hue}deg)`
       }))
       // BoxStyle emit
       this.$bus.$on(SHOW_BOX_PUITY,this._beforeDo((color) => {

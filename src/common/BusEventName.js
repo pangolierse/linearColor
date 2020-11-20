@@ -7,6 +7,7 @@ export const COLOR_DESIGNER = 'cgContainerPuity'
 export const BOX_RADIUS = 'changeRadius'
 export const BOX_SIZE = 'changeSize'
 export const BOX_DISTANCE = 'chgShadowDis'
+export const BOX_HUEROTATE = 'chgHueRotate'
 // linearColor
 export const INIT_BOX_LINEAR = 'initLinearColors'
 export const SHOW_BOX_LINEAR_COLOR = 'cgBoxLinearColor'

@@ -4,22 +4,21 @@
     <div class="circle" ref="circle">
       <div class="circle-span" ref="circleSpan"><input class="circle-input" @input="verfication($event)" v-model="deg" maxlength="3"/></div>
     </div>
-    <div class="lock">
-      <span>Sync W&H</span>
-      <div class="is-lock" @click="lock">
-        <div class="is-lock-o" ref="isLockO"></div>
-      </div>
-    </div>
+    <btn-lock v-on="$listeners">Sync W&H</btn-lock>
     <button class="create-linear" @click="btnClick"> + </button>
   </div>
 </template>
 <script>
+  import BtnLock from '@components/common/btnLock/BtnLock'
   import {getPageLocate,throttleDecorator} from '@common/utils'
-    import {
+  import {
     CHANGE_LINEAR_DEG,
   } from '@common/BusEventName'
   export default {
     name: 'LinearOption',
+    components:{
+      BtnLock,
+    },
     data(){
       return{
         deg:0,
