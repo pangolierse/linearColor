@@ -1,5 +1,13 @@
-# colordesigner
+# lineaColor
+## 介绍
+你可以用这个来设计你需要的渐变色，它可以提供至多5个渐变项目，你可以自定义它的角度，大小，颜色
 
+![演示1](https://github.com/pangolierse/LinearColor/edit/master/1.png)
+![演示2](https://github.com/pangolierse/LinearColor/edit/master/2.png)
+![演示3](https://github.com/pangolierse/LinearColor/edit/master/3.png)
+
+具体还是要自己实践才能发现更多的用法,看不到图片的话可以直接去体验
+演示地址：（http://www.pangolier.cn/project/linearColor/）
 ## Project setup
 ```
 npm install
@@ -14,6 +22,5 @@ npm run serve
 ```
 npm run build
 ```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

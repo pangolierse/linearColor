@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-
+/test
+/showImge
 
 # local env files
 .env.local
